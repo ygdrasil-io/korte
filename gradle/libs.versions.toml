@@ -1,0 +1,14 @@
+[versions]
+kotlin = "1.9.0"
+kotlinx-coroutines = "1.7.2"
+kotlinx-atomicfu = "0.21.0"
+
+[libraries]
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinx-coroutines" }
+kotlinx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "kotlinx-coroutines" }
+kotlinx-atomicfu = { module = "org.jetbrains.kotlinx:atomicfu", version.ref = "kotlinx-atomicfu" }
+
+[bundles]
+kotlinx-coroutines = ["kotlinx-coroutines-core", "kotlinx-atomicfu"]
+
+
